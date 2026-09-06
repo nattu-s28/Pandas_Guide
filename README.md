@@ -18,7 +18,6 @@ Machine Learning dataset preparation
 It mainly provides two powerful data structures:
 
 **Series** → One-dimensional labeled data.
-
 **DataFrame** → Two-dimensional tabular data.
 
 # 📌 Table of Contents
