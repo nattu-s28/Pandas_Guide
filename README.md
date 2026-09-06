@@ -18,6 +18,7 @@ Machine Learning dataset preparation
 It mainly provides two powerful data structures:
 
 **Series** → One-dimensional labeled data.
+
 **DataFrame** → Two-dimensional tabular data.
 
 # 📌 Table of Contents
@@ -126,7 +127,6 @@ It mainly provides two powerful data structures:
 | `pd.read_csv()` | `filepath_or_buffer`, `sep`, `header`, `names`, `usecols`, `dtype`, `nrows` | Loads CSV data into a DataFrame. | `pd.read_csv("data.csv")` |
 | `pd.read_excel()` | `io`, `sheet_name`, `header`, `usecols`, `nrows` | Loads Excel data into a DataFrame. | `pd.read_excel("data.xlsx")` |
 | `pd.read_json()` | `path_or_buf`, `orient`, `dtype` | Loads JSON data into a DataFrame. | `pd.read_json("data.json")` |
-| `pd.read_sql()` | `sql`, `con`, `index_col`, `params` | Loads SQL query results into a DataFrame. | `pd.read_sql("SELECT * FROM users", con)` |
 
 ---
 
@@ -334,34 +334,3 @@ It mainly provides two powerful data structures:
 | `.str.extract()` | `pat`, `expand` | Extracts text using a pattern. | `df["Email"].str.extract(r"@(.*)")` |
 
 ---
-
-# 🤖 Pandas for Machine Learning
-
-| Machine Learning Task | Important Pandas Functions |
-|---|---|
-| Load Dataset | `read_csv()`, `read_excel()`, `read_json()` |
-| Explore Dataset | `head()`, `tail()`, `info()`, `describe()` |
-| Select Features | `[]`, `loc[]`, `iloc[]` |
-| Filter Dataset | `isin()`, `between()`, `query()` |
-| Handle Missing Values | `isnull()`, `fillna()`, `dropna()` |
-| Remove Duplicates | `duplicated()`, `drop_duplicates()` |
-| Data Analysis | `mean()`, `median()`, `std()`, `var()` |
-| Categorical Analysis | `unique()`, `nunique()`, `value_counts()` |
-| Feature Transformation | `apply()`, `map()`, `replace()` |
-| Combine Datasets | `concat()`, `merge()` |
-| Group Analysis | `groupby()`, `agg()` |
-| Text Cleaning | `.str.lower()`, `.str.strip()`, `.str.replace()` |
-
----
-
-# 🚀 Conclusion
-
-This repository contains a quick-reference guide to essential Pandas functions used for:
-
-- Data Cleaning
-- Data Analysis
-- Data Preprocessing
-- Feature Engineering
-- Machine Learning Preparation
-
-> **"Good Machine Learning starts with good data, and good data preparation starts with Pandas."** 🐼📊🤖
